@@ -1,4 +1,6 @@
+from dotenv import load_dotenv
 import os
+load_dotenv()
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 
@@ -13,4 +15,4 @@ class Config(object):
 	MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
 	MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 	MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-	ADMINS = ['animaltyping@gmail.com']
+	ADMINS = ['charlie.faucher@gmail.com']

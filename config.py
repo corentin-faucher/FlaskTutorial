@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import os
-load_dotenv()
+load_dotenv() # Utile ? simplement fixer les env. variables ici ?
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 

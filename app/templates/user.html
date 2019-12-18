@@ -12,7 +12,7 @@
 			<p>{{ user.about_me }}</p>
 			{% endif %}
 			{% if user.last_seen %}
-			<p>Last seen on: {{ user.last_seen }}</p>
+			<p>Last seen on: {{ moment(user.last_seen).format('LLL') }}</p>
 			{% endif %}
 			<p>{{ user.followers.count() }} followers, {{ user. followeds.count() }} following.</p>
 			{% if user == current_user %}
@@ -29,18 +29,5 @@
 {% for post in posts %}
 	{% include '_post.html' %}
 {% endfor %}
-	<nav aria-label="...">
-		<ul class="pager">
-			<li class="previous{% if not prev_url %} disable{% endif %}">
-				<a href="{{ prev_url or '#' }}">
-					<span aria-hidden="true">&larr;</span> Newer posts
-				</a>
-			</li>
-			<li class="next{% if not next_url %} disable{% endif %}">
-				<a href="{{ next_url or '#' }}">
-					Older posts <span aria-hidden="true">&rarr;</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
+{% include '_post_nav.html' %}
 {% endblock %}

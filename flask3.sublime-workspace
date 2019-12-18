@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"send_",
+				"send_async_email"
+			],
+			[
+				"Reset",
+				"ResetPasswordForm"
+			],
+			[
+				"Subm",
+				"SubmitField"
+			],
+			[
+				"exp",
+				"expires_in"
+			],
+			[
+				"htm",
+				"html_body"
+			],
+			[
+				"fol",
+				"followers"
+			],
+			[
 				"next",
 				"next_page"
 			],
@@ -342,21 +366,38 @@
 	"expanded_folders":
 	[
 		"/Users/coq/code/flask3",
-		"/Users/coq/code/flask3/app"
+		"/Users/coq/code/flask3/app",
+		"/Users/coq/code/flask3/logs"
 	],
 	"file_history":
 	[
-		"/Users/coq/code/flask3/app/__init__.py",
-		"/Users/coq/code/flask3/app/templates/login.html",
 		"/Users/coq/code/flask3/app/templates/register.html",
-		"/Users/coq/code/flask3/app/forms.py",
-		"/Users/coq/code/flask3/app/models.py",
-		"/Users/coq/code/flask3/config.py",
 		"/Users/coq/code/flask3/app/routes.py",
-		"/Users/coq/code/flask3/.env",
-		"/Users/coq/code/flask3/flask3.py",
+		"/Users/coq/code/flask3/app/email.py",
+		"/Users/coq/code/flask3/app/templates/user.html",
+		"/Users/coq/code/flask3/app/templates/reset_password_request.html",
+		"/Users/coq/code/flask3/app/templates/reset_password.html",
+		"/Users/coq/code/flask3/config.py",
+		"/Users/coq/code/flask3/app/models.py",
 		"/Users/coq/code/flask3/app/templates/index.html",
+		"/Users/coq/code/flask3/app/templates/edit_profile.html",
 		"/Users/coq/code/flask3/app/templates/base.html",
+		"/Users/coq/code/flask3/app/templates/500.html",
+		"/Users/coq/code/flask3/app/templates/404.html",
+		"/Users/coq/code/flask3/app/__init__.py",
+		"/Users/coq/code/flask3/app/forms.py",
+		"/Users/coq/code/flask3/app/templates/email/reset_password.txt",
+		"/Users/coq/code/flask3/app/templates/email/reset_password.html",
+		"/Users/coq/code/flask3/app/templates/login.html",
+		"/Users/coq/code/flask3/.gitignore",
+		"/Users/coq/code/flask3/.env",
+		"/Users/coq/code/flask3/logs/coqblog.log",
+		"/Users/coq/code/flask3/app/templates/imd",
+		"/Users/coq/code/flask3/app/templates/_post.html",
+		"/Users/coq/code/flask3/tests.py",
+		"/Users/coq/code/flask3/app/errors.py",
+		"/Users/coq/code/flask3/venv/lib/python3.6/site-packages/flask_migrate/__init__.py",
+		"/Users/coq/code/flask3/flask3.py",
 		"/Users/coq/code/flask3/.flaskenv",
 		"/Users/coq/code/flask2/templates/student.html",
 		"/Users/coq/code/flask2/templates/index.html",
@@ -457,40 +498,32 @@
 		"/Users/coq/Dropbox/MTH1102_Problemes/python/riemannproblem.py",
 		"/Users/coq/Dropbox/MTH1102_Problemes/maple/test1.mpl",
 		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnimalTypingMod/app.iml",
-		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/cocoblio/build.gradle",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/bankproblem.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/coqtex.py",
-		"/Users/coq/Library/Application Support/Steam/config/config.vdf",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/coqTex.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/riemann.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/tkTest.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/problembank.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/probBank.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/coqUtils.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/riemann.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/coqTex.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/calcul2.sublime-project",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/pdf/riemann.pdf",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/riemann.tex",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/test1.mpl",
-		"/Users/coq/Dropbox/MTH1102_Problemes/Procedures Maple/MapleToPdf.py"
+		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/cocoblio/build.gradle"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
 		"height": 187.0,
 		"where_history":
 		[
+			"/Users/coq/code/flask3/app/templates",
+			"/Users/coq/code/flask3/app",
+			""
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			" content %}",
+			"    ",
+			"        ",
+			"filter",
+			"app"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -498,6 +531,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\t",
+			"",
+			"\t\t"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -552,7 +588,7 @@
 	"project": "flask3.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -590,7 +626,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 179.0,
+	"side_bar_width": 200.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

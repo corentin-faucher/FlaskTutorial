@@ -1,0 +1,243 @@
+# French translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-12-19 10:09-0500\n"
+"PO-Revision-Date: 2019-12-19 10:21-0500\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.2.4\n"
+
+#: app/__init__.py:23
+msgid "Please log in to access this page."
+msgstr "SVP Connectez-vous pour accéder à cette page."
+
+#: app/email.py:19
+msgid "[CoqBlog] Reset your password"
+msgstr "[CoqBlog] Réinitialisez votre mot de passe"
+
+#: app/forms.py:8 app/forms.py:15 app/forms.py:33
+msgid "Username"
+msgstr "Identifiant"
+
+#: app/forms.py:9 app/forms.py:17 app/forms.py:58
+msgid "Password"
+msgstr "Mot de passe"
+
+#: app/forms.py:10
+msgid "Remember me"
+msgstr "Rester connecté"
+
+#: app/forms.py:11 app/routes.py:71 app/templates/login.html:5
+msgid "Sign In"
+msgstr "Connexion"
+
+#: app/forms.py:16 app/forms.py:54
+msgid "Email"
+msgstr "Courriel"
+
+#: app/forms.py:18 app/forms.py:59
+msgid "Repeat password"
+msgstr "Confirmation du mot de passe"
+
+#: app/forms.py:19 app/routes.py:91 app/templates/register.html:5
+msgid "Register"
+msgstr "S'enregistrer"
+
+#: app/forms.py:24 app/forms.py:45
+msgid "Please use a different username."
+msgstr "SVP utilisez un autre identifiant."
+
+#: app/forms.py:29
+msgid "Please use a different email address."
+msgstr "SVP utilisez un autre courriel."
+
+#: app/forms.py:34
+msgid "About me"
+msgstr "À propos de moi"
+
+#: app/forms.py:35 app/forms.py:51
+msgid "Submit"
+msgstr "Soumettre"
+
+#: app/forms.py:49
+msgid "Say something..."
+msgstr "Écrivez quelque chose..."
+
+#: app/forms.py:55 app/forms.py:60
+msgid "Request Password Reset"
+msgstr "Réinitialisez le mot de passe"
+
+#: app/routes.py:29
+msgid "Your post is now live!"
+msgstr "Votre post est live !"
+
+#: app/routes.py:38 app/templates/base.html:25
+msgid "Home"
+msgstr "Home"
+
+#: app/routes.py:52 app/templates/base.html:26
+msgid "Explore"
+msgstr "Explorer"
+
+#: app/routes.py:64
+msgid "Invalid username or password."
+msgstr "Identifiant ou mot de passe non valide"
+
+#: app/routes.py:89
+msgid "Congratulation, you are now a registered user!"
+msgstr "Félicitation, vous êtes maintenant enregistré !"
+
+#: app/routes.py:103
+msgid "Check your email for the instruction to reset your password."
+msgstr "Vérifiez vos courriels pour réinitialiser votre mot de passe."
+
+#: app/routes.py:105 app/templates/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "Réinitialiser votre mot de passe."
+
+#: app/routes.py:118
+msgid "Your password has been reset."
+msgstr "Votre mot de passe est réinitialisé."
+
+#: app/routes.py:146
+msgid "The changes have been made."
+msgstr "Les changements ont été enregistrés."
+
+#: app/routes.py:151 app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "Modifier votre profil."
+
+#: app/routes.py:159 app/routes.py:175
+#, python-format
+msgid "User %(username)s not found."
+msgstr "Ne peut trouver %(username)s."
+
+#: app/routes.py:162
+msgid "You cannot follow yourself!"
+msgstr "Vous ne pouvez pas vous suivre..."
+
+#: app/routes.py:166
+#, python-format
+msgid "You are following %(username)s!"
+msgstr "Vous suivez %(username)s !"
+
+#: app/routes.py:178
+msgid "You cannot unfollow yourself!"
+msgstr "Vous ne pouvez arrêter de vous suivre..."
+
+#: app/routes.py:182
+#, python-format
+msgid "You are not following %(username)s!"
+msgstr "Vous ne suivez plus %(username)s."
+
+#: app/templates/404.html:4
+msgid "Not Found"
+msgstr "Chemin inexistant..."
+
+#: app/templates/404.html:5 app/templates/500.html:6
+msgid "Back"
+msgstr "Retour"
+
+#: app/templates/500.html:4
+msgid "An unexpected error has occurred. "
+msgstr "Une erreur est survenue."
+
+#: app/templates/500.html:5
+msgid "The adminstrator has been notified."
+msgstr "L'admistrateur à été averti."
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s:"
+msgstr "%(username)s a dit, %(when)s :"
+
+#: app/templates/_post_nav.html:5
+msgid "Newer posts"
+msgstr "Nouveaux posts"
+
+#: app/templates/_post_nav.html:10
+msgid "Older posts"
+msgstr "Vieux posts"
+
+#: app/templates/base.html:7
+msgid "Welcome to CoqBlog"
+msgstr "Bienvenue à CoqBlog"
+
+#: app/templates/base.html:30
+msgid "Login"
+msgstr "Connexion"
+
+#: app/templates/base.html:32
+msgid "Profile"
+msgstr "Profil"
+
+#: app/templates/base.html:33
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: app/templates/index.html:5
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr "Bonjour %(username)s!"
+
+#: app/templates/login.html:13
+msgid "New User?"
+msgstr "Nouvel usagé ?"
+
+#: app/templates/login.html:13
+msgid "Click to Register!"
+msgstr "Cliquez pour s'enregistrer"
+
+#: app/templates/login.html:16
+msgid "Forget your password?"
+msgstr "Oublié votre mot de passe ?"
+
+#: app/templates/login.html:17
+msgid "Click to Reset It"
+msgstr "Cliquez pour réinitialiser"
+
+#: app/templates/reset_password.html:5
+msgid "Reset your password"
+msgstr "Réinitialiser votre mot de passe"
+
+#: app/templates/user.html:10
+msgid "User:"
+msgstr "Usagé :"
+
+#: app/templates/user.html:15
+msgid "Last seen on:"
+msgstr "Dernière connection :"
+
+#: app/templates/user.html:18
+#, python-format
+msgid "%(count)d followers"
+msgstr "%(count)d followers"
+
+#: app/templates/user.html:19
+#, python-format
+msgid "%(count)d following."
+msgstr "suivi par %(count)d."
+
+#: app/templates/user.html:22
+msgid "Edit your profile"
+msgstr "Modifier votre profil"
+
+#: app/templates/user.html:24
+msgid "Follow"
+msgstr "Suivre"
+
+#: app/templates/user.html:26
+msgid "Unfollow"
+msgstr "Ne pas suivre"

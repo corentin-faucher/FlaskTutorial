@@ -1,5 +1,6 @@
-from flask import Flask
 from config import Config
+from flask import Flask, request
+from flask_babel import Babel, lazy_gettext as _l
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
 from flask_mail import Mail
@@ -12,12 +13,14 @@ import os
 
 theapp = Flask(__name__)
 theapp.config.from_object(Config)
+babel = Babel(theapp)
 bootstrap = Bootstrap(theapp)
 db = SQLAlchemy(theapp)
 migrate = Migrate(theapp, db)
 moment = Moment(theapp)
 login = LoginManager(theapp)
 login.login_view = 'login'
+login.login_message = _l('Please log in to access this page.')
 mail = Mail(theapp)
 
 from app import routes, models, errors # akward, mais routes doit importer flaskapp...
@@ -47,5 +50,10 @@ if not theapp.debug:
 	theapp.logger.addHandler(file_handler)
 	theapp.logger.setLevel(logging.INFO)
 	theapp.logger.info('Coqblog startup')
+
+@babel.localeselector
+def get_locale():
+	return 'fr' #request.accept_languages.best_match(theapp.config['LANGUAGES'])
+
 
 

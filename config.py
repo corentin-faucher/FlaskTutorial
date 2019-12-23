@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import os
-load_dotenv() # Utile ? simplement fixer les env. variables ici ?
+load_dotenv() # On met dans le .env pour cacher les données sensibles...
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 

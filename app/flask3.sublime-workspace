@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"a\tTag"
+			],
+			[
+				"td",
+				"td\tTag"
+			],
+			[
+				"send_",
+				"send_async_email"
+			],
+			[
+				"Reset",
+				"ResetPasswordForm"
+			],
+			[
+				"Subm",
+				"SubmitField"
+			],
+			[
+				"exp",
+				"expires_in"
+			],
+			[
+				"htm",
+				"html_body"
+			],
+			[
+				"fol",
+				"followers"
+			],
+			[
 				"next",
 				"next_page"
 			],
@@ -312,9 +344,17 @@
 	"command_palette":
 	{
 		"height": 119.0,
-		"last_filter": "install",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -324,9 +364,13 @@
 	},
 	"console":
 	{
-		"height": 68.0,
+		"height": 179.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import os",
+			"pip install flask",
+			"from flask import render_template",
 			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
 		]
 	},
@@ -341,17 +385,60 @@
 	},
 	"file_history":
 	[
-		"/Users/coq/code/flask3/app/__init__.py",
-		"/Users/coq/code/flask3/app/templates/login.html",
-		"/Users/coq/code/flask3/app/templates/register.html",
-		"/Users/coq/code/flask3/app/forms.py",
-		"/Users/coq/code/flask3/app/models.py",
-		"/Users/coq/code/flask3/config.py",
-		"/Users/coq/code/flask3/app/routes.py",
+		"/Users/coq/code/flask3/flask3.",
 		"/Users/coq/code/flask3/.env",
+		"/Users/coq/Dropbox/Paperasse/CoqTS.txt",
+		"/Users/coq/android/testcocoblio/settings.gradle",
+		"/Users/coq/android/testcocoblio copy/app/app.iml",
+		"/Users/coq/Dropbox/AndroidStudioProjects/testcocoblio/app/build.gradle",
+		"/Users/coq/Dropbox/AndroidStudioProjects/testcocoblio/build.gradle",
+		"/Users/coq/android/testcocoblio_/settings.gradle",
+		"/Users/coq/android/testcocoblio_/local.properties",
+		"/Users/coq/android/testcocoblio_/gradlew.bat",
+		"/Users/coq/android/testcocoblio/gradle.properties",
+		"/Users/coq/android/testcocoblio_/gradle.properties",
+		"/Users/coq/android/testcocoblio/build.gradle",
+		"/Users/coq/android/testcocoblio_/build.gradle",
+		"/Users/coq/android/testcocoblio/app/build.gradle",
+		"/Users/coq/android/testcocoblio/testcocoblio.iml",
+		"/Users/coq/android/testcocoblio/local.properties",
+		"/Users/coq/Dropbox/AndroidStudioProjects/cocoblio/src/main/AndroidManifest.xml",
+		"/Users/coq/android/cocoblio/src/main/AndroidManifest.xml",
+		"/Users/coq/code/flask3/app/errors/__init__.py",
+		"/Users/coq/code/flask3/app/__init__.py",
 		"/Users/coq/code/flask3/flask3.py",
+		"/Users/coq/code/flask3/config.py",
+		"/Users/coq/code/flask3/babel.cfg",
+		"/Users/coq/code/flask3/app/templates/user.html",
+		"/Users/coq/code/flask3/app/templates/reset_password_request.html",
+		"/Users/coq/code/flask3/app/templates/reset_password.html",
+		"/Users/coq/code/flask3/app/templates/register.html",
+		"/Users/coq/code/flask3/app/templates/login.html",
+		"/Users/coq/code/flask3/app/templates/_post_nav.html",
+		"/Users/coq/code/flask3/app/templates/_post.html",
+		"/Users/coq/code/flask3/app/templates/_post",
 		"/Users/coq/code/flask3/app/templates/index.html",
+		"/Users/coq/code/flask3/app/templates/edit_profile.html",
 		"/Users/coq/code/flask3/app/templates/base.html",
+		"/Users/coq/code/flask3/app/templates/500.html",
+		"/Users/coq/code/flask3/app/templates/404.html",
+		"/Users/coq/code/flask3/app/routes.py",
+		"/Users/coq/code/flask3/app/forms.py",
+		"/Users/coq/code/flask3/venv/lib/python3.6/site-packages/wtforms/fields/core.py",
+		"/Users/coq/code/flask3/app/email.py",
+		"/Users/coq/code/flask3/app/cli.py",
+		"/Users/coq/code/flask3/logs/coqblog.log",
+		"/Users/coq/code/flask3/app/templates/reset_password",
+		"/Users/coq/code/flask3/app/templates/re",
+		"/Users/coq/code/flask3/app/templates/login.htmll",
+		"/Users/coq/code/flask3/app/errors.py",
+		"/Users/coq/code/flask3/app/models.py",
+		"/Users/coq/code/flask3/app/templates/email/reset_password.txt",
+		"/Users/coq/code/flask3/app/templates/email/reset_password.html",
+		"/Users/coq/code/flask3/.gitignore",
+		"/Users/coq/code/flask3/app/templates/imd",
+		"/Users/coq/code/flask3/tests.py",
+		"/Users/coq/code/flask3/venv/lib/python3.6/site-packages/flask_migrate/__init__.py",
 		"/Users/coq/code/flask3/.flaskenv",
 		"/Users/coq/code/flask2/templates/student.html",
 		"/Users/coq/code/flask2/templates/index.html",
@@ -383,7 +470,6 @@
 		"/Users/coq/code/mypyweb/app/templates/index.html",
 		"/Users/coq/code/mypyweb/app/templates/base.html",
 		"/Users/coq/.bash_profile",
-		"/Users/coq/Dropbox/Paperasse/CoqTS.txt",
 		"/Users/coq/heroku/Source/Main.hx",
 		"/Users/coq/code/mypyweb/allo.txt",
 		"/Users/coq/Dropbox/AndroidStudioProjects/animaltyping_old/AnTypMod/build.gradle",
@@ -426,53 +512,11 @@
 		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping_/build.gradle",
 		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping_/gradle.properties",
 		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping_/settings.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnTypMod/build.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnimalTyping.iml",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/build.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/gradle.properties",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/local.properties",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/settings.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/gradle/wrapper/gradle-wrapper.properties",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnTypMod/AnTypMod.iml",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnTypMod/AnimalTyping-AnTypMod.iml",
-		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/app/src/main/AndroidManifest.xml",
-		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/app/src/main/res/values/strings.xml",
-		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/build.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/app/build.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/app/build.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/settings.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/local.properties",
-		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/gradlew.bat",
-		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/gradle.properties",
-		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/gradle/wrapper/gradle-wrapper.properties",
-		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/build.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/cocoblio/build.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/TestCocoblio/cocoblio/cocoblio.iml",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/orderproblem.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/riemannproblem.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/maple/test1.mpl",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnimalTypingMod/app.iml",
-		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/cocoblio/build.gradle",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/bankproblem.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/coqtex.py",
-		"/Users/coq/Library/Application Support/Steam/config/config.vdf",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/coqTex.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/riemann.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/tkTest.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/problembank.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/probBank.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/python/coqUtils.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/riemann.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/coqTex.py",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/calcul2.sublime-project",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/pdf/riemann.pdf",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/riemann.tex",
-		"/Users/coq/Dropbox/MTH1102_Problemes/zCoqTesting/test1.mpl",
-		"/Users/coq/Dropbox/MTH1102_Problemes/Procedures Maple/MapleToPdf.py"
+		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnTypMod/build.gradle"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -483,7 +527,7 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
 		],
@@ -510,7 +554,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -547,7 +591,7 @@
 	"project": "flask3.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":

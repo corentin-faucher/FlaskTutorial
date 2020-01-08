@@ -1,4 +1,5 @@
 from config import Config
+from elasticsearch import Elasticsearch
 from flask import Flask, request, current_app
 from flask_babel import Babel, lazy_gettext as _l
 from flask_bootstrap import Bootstrap
@@ -36,6 +37,9 @@ def create_app(config_class=Config):
 	bootstrap.init_app(theapp)
 	moment.init_app(theapp)
 	babel.init_app(theapp)
+
+	theapp.elasticsearch = Elasticsearch([theapp.config['ELASTICSEARCH_URL']]) \
+		if theapp.config['ELASTICSEARCH_URL'] else None
 
 	from app.errors import bp as errors_bp
 	theapp.register_blueprint(errors_bp)

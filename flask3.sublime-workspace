@@ -386,12 +386,11 @@
 	"expanded_folders":
 	[
 		"/Users/coq/code/flask3",
-		"/Users/coq/code/flask3/app",
-		"/Users/coq/code/flask3/app/templates",
-		"/Users/coq/code/flask3/logs"
+		"/Users/coq/code/flask3/app"
 	],
 	"file_history":
 	[
+		"/Users/coq/code/flask3/app/errors/__init__.py",
 		"/Users/coq/code/flask3/app/__init__.py",
 		"/Users/coq/code/flask3/flask3.py",
 		"/Users/coq/code/flask3/config.py",
@@ -518,12 +517,11 @@
 		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/settings.gradle",
 		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/local.properties",
 		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/gradlew.bat",
-		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/gradle.properties",
-		"/Users/coq/Dropbox/AndroidStudioProjects/CocoblioTest/gradle/wrapper/gradle-wrapper.properties"
+		"/Users/coq/Dropbox/AndroidStudioProjects/Test2/gradle.properties"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -575,7 +573,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -612,7 +610,7 @@
 	"project": "flask3.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -649,8 +647,8 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 189.0,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -385,31 +385,27 @@
 	},
 	"file_history":
 	[
-		"/Users/coq/code/flask3/flask3.",
+		"/Users/coq/code/mathflask/templates/view.html",
+		"/Users/coq/code/mathflask/view_plain.html",
+		"/Users/coq/code/mathflask/templates/view_input.html",
+		"/Users/coq/code/flask3/app/templates/auth/login.html",
+		"/Users/coq/code/flask3/app/templates/user.html",
+		"/Users/coq/code/mathflask/templates/view_intput.html",
+		"/Users/coq/code/mathflask/compute.py",
+		"/Users/coq/code/mathflask/templates/view_output.html",
+		"/Users/coq/code/mathflask/controller.py",
+		"/Users/coq/code/flask3/app/main/routes.py",
+		"/Users/coq/code/flask3/app/auth/forms.py",
+		"/Users/coq/code/flask3/app/models.py",
+		"/Users/coq/code/flask3/flask3.py",
+		"/Users/coq/code/flask3/Procfile",
+		"/Users/coq/code/flask3/app/__init__.py",
+		"/Users/coq/code/flask3/requirements.txt",
+		"/Users/coq/code/flask3/config.py",
 		"/Users/coq/code/flask3/.env",
 		"/Users/coq/Dropbox/Paperasse/CoqTS.txt",
-		"/Users/coq/android/testcocoblio/settings.gradle",
-		"/Users/coq/android/testcocoblio copy/app/app.iml",
-		"/Users/coq/Dropbox/AndroidStudioProjects/testcocoblio/app/build.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/testcocoblio/build.gradle",
-		"/Users/coq/android/testcocoblio_/settings.gradle",
-		"/Users/coq/android/testcocoblio_/local.properties",
-		"/Users/coq/android/testcocoblio_/gradlew.bat",
-		"/Users/coq/android/testcocoblio/gradle.properties",
-		"/Users/coq/android/testcocoblio_/gradle.properties",
-		"/Users/coq/android/testcocoblio/build.gradle",
-		"/Users/coq/android/testcocoblio_/build.gradle",
-		"/Users/coq/android/testcocoblio/app/build.gradle",
-		"/Users/coq/android/testcocoblio/testcocoblio.iml",
-		"/Users/coq/android/testcocoblio/local.properties",
-		"/Users/coq/Dropbox/AndroidStudioProjects/cocoblio/src/main/AndroidManifest.xml",
-		"/Users/coq/android/cocoblio/src/main/AndroidManifest.xml",
 		"/Users/coq/code/flask3/app/errors/__init__.py",
-		"/Users/coq/code/flask3/app/__init__.py",
-		"/Users/coq/code/flask3/flask3.py",
-		"/Users/coq/code/flask3/config.py",
 		"/Users/coq/code/flask3/babel.cfg",
-		"/Users/coq/code/flask3/app/templates/user.html",
 		"/Users/coq/code/flask3/app/templates/reset_password_request.html",
 		"/Users/coq/code/flask3/app/templates/reset_password.html",
 		"/Users/coq/code/flask3/app/templates/register.html",
@@ -432,7 +428,6 @@
 		"/Users/coq/code/flask3/app/templates/re",
 		"/Users/coq/code/flask3/app/templates/login.htmll",
 		"/Users/coq/code/flask3/app/errors.py",
-		"/Users/coq/code/flask3/app/models.py",
 		"/Users/coq/code/flask3/app/templates/email/reset_password.txt",
 		"/Users/coq/code/flask3/app/templates/email/reset_password.html",
 		"/Users/coq/code/flask3/.gitignore",
@@ -512,7 +507,12 @@
 		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping_/build.gradle",
 		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping_/gradle.properties",
 		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping_/settings.gradle",
-		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnTypMod/build.gradle"
+		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnTypMod/build.gradle",
+		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/AnimalTyping.iml",
+		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/build.gradle",
+		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/gradle.properties",
+		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/local.properties",
+		"/Users/coq/Dropbox/AndroidStudioProjects/AnimalTyping/settings.gradle"
 	],
 	"find":
 	{
@@ -605,12 +605,12 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{

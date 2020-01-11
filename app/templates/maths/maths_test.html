@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		TeX: {
+			equationNumbers: {  autoNumber: "AMS"  },
+			extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+		}
+	});
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<h1>Test de maths</h1>
+<p>
+	Une page web avec une équation Latex \( u(t) = A e^{-\beta t} \sin(\omega t),\quad \forall\, t \in [0, T] \).
+</p>
+
+
+<div class="row">
+	<div class="col-md-4">
+		{{ wtf.quick_form(form) }}
+	</div>
+</div>
+<p>
+	{% if result != None %}
+	{{ result|safe }}
+	{% endif %}
+</p>
+{% endblock %}

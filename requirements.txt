@@ -4,6 +4,7 @@ blinker==1.4
 certifi==2019.11.28
 chardet==3.0.4
 Click==7.0
+cycler==0.10.0
 dominate==2.4.0
 elasticsearch==7.1.0
 Flask==1.1.1
@@ -19,9 +20,13 @@ guess-language-spirit==0.5.3
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.3
+kiwisolver==1.1.0
 Mako==1.1.0
 MarkupSafe==1.1.1
+matplotlib==3.1.2
+numpy==1.18.1
 PyJWT==1.7.1
+pyparsing==2.4.6
 python-dateutil==2.8.1
 python-dotenv==0.10.3
 python-editor==1.0.4
@@ -34,5 +39,6 @@ visitor==0.1.3
 Werkzeug==0.16.0
 WTForms==2.2.1
 
+# Heroku
 gunicorn==20.0.4
 psycopg2==2.8.4

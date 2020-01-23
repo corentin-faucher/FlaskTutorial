@@ -14,23 +14,34 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<h1>Test de maths</h1>
+<h1>{{ name }}</h1>
 <p>
-	Une page web avec une équation Latex \( u(t) = A e^{-\beta t} \sin(\omega t),\quad \forall\, t \in [0, T] \).
+	{% if statement == null %}
+	Erreur : problème non initialisé...
+	{% else %}
+	{{ statement|safe }}
+	{% endif %}
 </p>
-<p>
-	Voir un problème d'<a href="{{ url_for('maths.chap6_intD') }}">intégrale double sur un rectangle</a>.
-</p>
-
 
 <div class="row">
 	<div class="col-md-4">
-		{{ wtf.quick_form(form) }}
+		<form class="form form-horizontal" method="post" role="form">
+			{{ form.hidden_tag() }}
+			{{ wtf.form_field(form.redo) }}
+			{% if solution == None %}
+			{{ wtf.form_field(form.submit) }}
+			{% endif %}
+		</form>
 	</div>
 </div>
+
+{% if solution != None %}
+<h2>
+	Solution
+</h2>
 <p>
-	{% if result != None %}
-	{{ result|safe }}
-	{% endif %}
+	{{ solution|safe }}
 </p>
+{% endif %}
+
 {% endblock %}

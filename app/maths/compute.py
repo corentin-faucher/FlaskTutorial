@@ -5,13 +5,14 @@ import os, time, glob
 
 matplotlib.use('Agg')
 
-def damped_vibrations(t, A, b, w):
+def oscillation_amortie(t, A, b, w):
 	return A * exp(-b*t) * cos(w*t)
 
 def compute(A, b, w, T, resolution=500):
-	""" Return the filename of the plot of the damped_vibrations function."""
+	""" Retourne le graph d'une oscillation amortie
+	come une image html (string simple). """
 	t = linspace(0, T, resolution+1)
-	u = damped_vibrations(t, A, b, w)
+	u = oscillation_amortie(t, A, b, w)
 	plt.figure()
 	plt.plot(t, u)
 	plt.title(r'A=%g, $\beta=%g$, $\omega=%g$.' % (A, b, w))

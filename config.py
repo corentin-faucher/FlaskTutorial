@@ -7,7 +7,9 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config(object):
+	ADMINS = ['charlie.faucher@gmail.com']
 	LANGUAGES = ['en', 'fr']
+	REDIS_URL = os.environ.get('REDIS_URL') or 'redis://'
 	SECRET_KEY = os.environ.get('SECRET_KEY') or 'waf-wouf'
 	SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
 	'sqlite:///' + os.path.join(basedir, 'app.db')
@@ -19,6 +21,5 @@ class Config(object):
 	MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
 	MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
 	MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-	ADMINS = ['charlie.faucher@gmail.com']
 	MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
 	ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')

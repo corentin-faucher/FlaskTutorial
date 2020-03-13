@@ -12,7 +12,7 @@ from sympy.parsing.mathematica import mathematica
 from app.maths.mathutils import latexWrapInPar
 
 
-class Chap6_intD:
+class Chap6_intR:
 	name = "Intégrale double sur un rectangle"
 
 	def __init__(self):
@@ -27,6 +27,8 @@ class Chap6_intD:
 		f = Rational(randint(-5, 5))	# Init comme expression symbolique.
 		for i in range(nb_termes):
 			f += randint(-5, 5) * x ** randint(0, 2) * y ** randint(0, 2)
+		# On ne garde pas l'expression symbolique (trop lourd pour les cookies),
+		# on ne garde que l'expression sous forme de string.
 		self.f_string = mathematica_code(f)
 
 	def getStatement(self):

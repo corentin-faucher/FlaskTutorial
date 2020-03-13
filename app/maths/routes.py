@@ -4,7 +4,7 @@ import jsonpickle
 
 from app.maths import bp
 from app.maths.compute import compute
-from app.maths.chap6_intD import Chap6_intD
+from app.maths.chap6_intR import Chap6_intR
 from app.maths.forms import JustShowMeTheSolutionForm, OscillationInputForm
 
 
@@ -23,7 +23,7 @@ def maths_test():
 
 @bp.route('/chap6_intD', methods=['GET', 'POST'])
 @login_required
-def chap6_intD():
+def chap6_intR():
 	form = JustShowMeTheSolutionForm()
 
 	print(f"""request.method: {request.method}, form.validate_on_submit: {form.validate_on_submit()},
@@ -36,12 +36,15 @@ def chap6_intD():
 		solution = problem.getSolution()
 		flash('Solution générée.')
 	else:
-		problem = Chap6_intD()
+		problem = Chap6_intR()
 		statement = problem.getStatement()
 		solution = None
 		session['problem'] = jsonpickle.encode(problem)
 		print(session['problem'])
-		flash('Énoncé généré.')
+		if request.method == 'POST':
+			flash('Nouvel énoncé...')
+		else:
+			flash('Énoncé généré.')
 
 	return render_template("maths/maths_problem.html", form=form, 
 		name=problem.name, statement=statement, solution=solution)

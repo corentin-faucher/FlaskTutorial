@@ -11,7 +11,8 @@ from flask_sqlalchemy import SQLAlchemy
 import logging
 from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
-
+from redis import Redis
+import rq
 
 
 babel = Babel()
@@ -40,6 +41,9 @@ def create_app(config_class=Config):
 
 	theapp.elasticsearch = Elasticsearch([theapp.config['ELASTICSEARCH_URL']]) \
 		if theapp.config['ELASTICSEARCH_URL'] else None
+
+	theapp.redis = Redis.from_url(theapp.config['REDIS_URL'])
+	theapp.task_queue = rq.Queue('coqblog-tasks', connection=theapp.redis)
 
 	from app.errors import bp as errors_bp
 	theapp.register_blueprint(errors_bp)
